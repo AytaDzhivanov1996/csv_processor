@@ -14,6 +14,7 @@
 ```bash
 # Установка зависимостей
 pip install -r requirements.txt
+```
 
 ### Основные команды
 
