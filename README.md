@@ -20,30 +20,30 @@ pip install -r requirements.txt
 
 ```bash
 # Фильтрация данных
-python csv_processor.py sample_data.csv --filter "brand=xiaomi"
-python csv_processor.py sample_data.csv --filter "price>500"
-python csv_processor.py sample_data.csv --filter "rating<4.5"
+python csv_processor.py products.csv --filter "brand=xiaomi"
+python csv_processor.py products.csv --filter "price>500"
+python csv_processor.py products.csv --filter "rating<4.5"
 
 # Агрегация данных
-python csv_processor.py sample_data.csv --aggregate "avg=price"
-python csv_processor.py sample_data.csv --aggregate "min=rating"
-python csv_processor.py sample_data.csv --aggregate "max=price"
+python csv_processor.py products.csv --aggregate "avg=price"
+python csv_processor.py products.csv --aggregate "min=rating"
+python csv_processor.py products.csv --aggregate "max=price"
 
 # Комбинированное использование
-python csv_processor.py sample_data.csv --filter "brand=xiaomi" --aggregate "avg=price"
+python csv_processor.py products.csv --filter "brand=xiaomi" --aggregate "avg=price"
 ```
 
 ### Примеры
 
 ```bash
 # Найти все телефоны дороже 500
-python csv_processor.py sample_data.csv --filter "price>500"
+python csv_processor.py products.csv --filter "price>500"
 
 # Средняя цена всех телефонов
-python csv_processor.py sample_data.csv --aggregate "avg=price"
+python csv_processor.py products.csv --aggregate "avg=price"
 
 # Средняя цена телефонов Xiaomi
-python csv_processor.py sample_data.csv --filter "brand=xiaomi" --aggregate "avg=price"
+python csv_processor.py products.csv --filter "brand=xiaomi" --aggregate "avg=price"
 ```
 
 ## Тестирование
